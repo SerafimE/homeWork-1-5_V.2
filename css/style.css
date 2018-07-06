@@ -1,0 +1,58 @@
+body {
+    background: url(https://www.tourprom.ru/site_media/images/upload/2016/8/30/resortimage/piter-zimnii.jpg) no-repeat;
+    background-size: cover;
+    color: #444349;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+div {
+    margin: 3% 2% auto auto;
+    width: 600px;
+    text-align: center;
+    background: #E7E7E7;
+    border: 4px solid #B8B8B8;
+    border-radius: 20px;
+    font-size: 24px;
+    box-shadow: 0 0 4px #222;
+}
+
+h1 {
+    background: #FFC84C;
+    font-size: 25px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    margin: 0 0;
+    padding: 30px 0 0 0;
+    height: 60px;
+}
+
+p {
+    font-size: 20px;
+    background: #B8B8B8;
+    margin: 3px 0;
+    padding: 5px;
+}
+
+p.condition {
+    font-size: 20px;
+    margin: 3px 0;
+    padding: 5px;
+}
+
+p#img {
+    background: #795a3b;
+    padding: 0;
+}
+
+img {
+    width: 80px;
+    filter: drop-shadow(0 0 8px #222);
+}
+
+p#humidity {
+    background: #FFC84C;
+    margin: 0;
+    padding: 5px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
