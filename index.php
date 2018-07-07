@@ -4,15 +4,9 @@ $city = '498817';
 $units = 'metric';
 $appid = 'ef275086da6b4c2a604c04dd29f2e5dc';
 $url = "$link?id=$city&units=$units&appid=$appid";
-$weather = file_get_contents($url);
-if ($weather === false) {
-    exit('Не удалось получить данные');
-}
-$array_weather = json_decode($weather, true);
-if ($array_weather === null) {
-    exit('Ошибка декодирования json');
-}
 
+$weather = (!empty(file_get_contents($url))) ? file_get_contents($url) : 'Не удалось получить данные';
+$array_weather = (!empty(json_decode($weather, true))) ? json_decode($weather, true) : 'Ошибка декодирования json';
 $name = (!empty($array_weather['name'])) ? $array_weather['name'] : 'не удалось получить данные';
 $country = (!empty($array_weather['sys']['country'])) ? $array_weather['sys']['country'] : 'не удалось получить данные';
 $sunrise = (!empty($array_weather['sys']['sunrise'])) ? $array_weather['sys']['sunrise'] : 'не удалось получить данные';
